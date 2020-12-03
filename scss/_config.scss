@@ -1,0 +1,25 @@
+$primary-color: #190479;
+$secondary-color: #ed14b7;
+
+@mixin easeInOut {
+  transition: all 0.6s ease-in-out;
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 770px) and (max-width: 1230px) {
+    @content;
+  }
+}
